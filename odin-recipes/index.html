@@ -5,12 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href = "recipes/lasagna.html">Lasagna</a></li>
-        <li><a href = "recipes/avocadosalad.html">avocado-salsa</a></li>
+
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    /*Style the header*/
+
+ #myHeader{
+            
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+/*Create two columns/boxes that floats next to each other*/
+nav{
+    float: left;
+    width: 30%;
+    background: palevioletred;
+    padding: 20px;
+    height: 700px;
+}
+article{
+    float:left;
+    padding:20px;
+    width: 70%;
+    background-color: palegoldenrod;
+    height: 700px;
+    
+    
+}
+/* Clear floats after the columns*/
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+footer {
+    background-color: powderblue;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+}
+/*Responsive layout- makes the two columns/boxes stack
+on top of each other, instead of next to each other*/
+@media(max-width: 600px){
+    nav, article { 
+        width: 100%;
+        height: auto;
+    }
+}
+        
+ </style>
+ </head>
+ <body>
+ <header>
+    <h1 id="myHeader">Odin Recipes</h1>
+</header>
+<section>
+    <nav>
+    <ul type="none">
+        <li><a href = "recipes/lasagna.html">
+        <img src= "/Users/ishikaagarwal/Desktop/l.jpeg" width="200" height="200"></a></li>
+        <li><a href = "recipes/avocadosalad.html">
+        <img src= "/Users/ishikaagarwal/Desktop/a.jpeg" width="200" height="200"></a></li>
     </ul>
+    </nav>
+   
+    <article>
+        <p>This is a website which contains few interesting recipes.
+            To view any recipe you desire to make, just click on the image 
+        </p>
+    </article>
+    </section>
+    <footer> <p>Footer</p></footer>
 </body>
 </html>

@@ -1,10 +1,57 @@
+<html>
+<head>
+<style>
+ .city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.note{
+    font-size: 120%;
+    color:bisque;
+}
+table,th,td{
+    border: 1px solid rgba(0, 0, 0, 0.818);
+    border-collapse: collapse;
+}
+</style>
+</head>
+<body style='background-color:powderblue'>
 <img src = "/Users/ishikaagarwal/Desktop/lasagna15.jpeg" alt="Lasagna" width="500" height="600">
-    <h3>Description</h3>
-    <p>Let's get started with the most delicious vegetable Lasagna which 
-        takes less than 40 minutes to prepare. I hope you enjoy this recipe
-    </p>
-    <h3>Ingredients</h3>
-    <ul>
+<button onclick="document.location='/Users/ishikaagarwal/odin/odin-recipes/nutrition/lnutri.html'">Nutritional info</button>
+<table style="width:50%">
+    <tr>
+        <td>Prep</td>
+        <td>25 mins</td>
+    </tr>
+    <tr>
+        <td>Cook</td>
+        <td>1 hour</td>
+    </tr>
+    <tr>
+        <td>Additional</td>
+        <td>15 mins</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>1 hr 40 mins</td>
+    </tr>
+    <tr>
+        <td>Servings</td>
+        <td>12</td>
+    </tr>
+</table>
+<div class = "city">
+<h3 style = 'background-color:black'>Description</h3>
+<p>Let's get started with the most delicious vegetable <span class = "note">Lasagna</span> which 
+takes less than 40 minutes to prepare. I hope you enjoy this recipe
+</p>
+</div>
+<div class = "city">
+    <h3 style='background-color:black'>Ingredients</h3>
+    <ul style = "list-style-type:disc;"></ul>
         <li>1 (16 ounce) package lasagna noodles</li>
 
         <li>2 tablespoons vegetable oil</li> 
@@ -29,8 +76,10 @@
             
         <li>  ½ cup grated Parmesan cheese</li>
     </ul>
-    <h3>Steps</h3>
-    <ol>
+    </div>
+    <div class = "city">
+    <h3 style= "background-color:black">Steps</h3>
+    <ol type = "1">
        <li>Cook lasagna noodles in a large pot of boiling water for 10 minutes, or until al dente. Rinse with cold water, and drain.</li> 
        <li>Heat oil in a large saucepan. Add mushrooms, green peppers, onion, and garlic; cook and stir until tender, about 5 minutes. Stir in pasta sauce and basil; bring to a boil. Reduce heat, and simmer for 15 minutes.</li>
        <li>While the sauce is simmering, mix together ricotta, 2 cups mozzarella cheese, and eggs in a medium bowl.</li>
@@ -38,3 +87,6 @@
        <li>Spread 1 cup cooked tomato and vegetable sauce into the bottom of the prepared baking dish. Lay down 1/2 of the lasagna noodles and layer 1/2 each of the ricotta mix, sauce, and Parmesan cheese on top. Repeat layering again with noodles, ricotta mix, sauce, and Parmesan cheese. Top with remaining 2 cups mozzarella.</li>
        <li>Bake in the preheated oven, uncovered, for 40 minutes. Let stand for 15 minutes before serving.</li>
     </ol>
+    </div>
+    </body>
+    </html>
